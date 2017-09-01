@@ -354,7 +354,7 @@ Value masternode(const Array& params, bool fHelp)
         }
 
         if(activeMasternode.status == MASTERNODE_REMOTELY_ENABLED) return "masternode started remotely";
-        if(activeMasternode.status == MASTERNODE_INPUT_TOO_NEW) return "masternode input must have at least 15 confirmations";
+        if(activeMasternode.status == MASTERNODE_INPUT_TOO_NEW) return "masternode input must have at least 10 confirmations";
         if(activeMasternode.status == MASTERNODE_STOPPED) return "masternode is stopped";
         if(activeMasternode.status == MASTERNODE_IS_CAPABLE) return "successfully started masternode";
         if(activeMasternode.status == MASTERNODE_NOT_CAPABLE) return "not capable masternode: " + activeMasternode.notCapableReason;
@@ -482,7 +482,7 @@ Value masternode(const Array& params, bool fHelp)
     if (strCommand == "debug")
     {
         if(activeMasternode.status == MASTERNODE_REMOTELY_ENABLED) return "masternode started remotely";
-        if(activeMasternode.status == MASTERNODE_INPUT_TOO_NEW) return "masternode input must have at least 15 confirmations";
+        if(activeMasternode.status == MASTERNODE_INPUT_TOO_NEW) return "masternode input must have at least 10 confirmations";
         if(activeMasternode.status == MASTERNODE_IS_CAPABLE) return "successfully started masternode";
         if(activeMasternode.status == MASTERNODE_STOPPED) return "masternode is stopped";
         if(activeMasternode.status == MASTERNODE_NOT_CAPABLE) return "not capable masternode: " + activeMasternode.notCapableReason;
