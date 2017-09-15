@@ -14,3 +14,9 @@ Added new checkpoint
 v2.0.0.5
 --------
 UI typo fixes
+
+v2.0.1.0
+--------
+Added seed nodes
+Added checkpoints
+Network sync fix

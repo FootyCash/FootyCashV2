@@ -104,6 +104,10 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         vSeeds.push_back(CDNSSeedData("0",  "seedv2.footycash.com"));
+        vSeeds.push_back(CDNSSeedData("1",  "xftseed1.dblocks.io"));
+        vSeeds.push_back(CDNSSeedData("2",  "xftseed2.dblocks.io"));
+        vSeeds.push_back(CDNSSeedData("3",  "ns2.footycash.com"));
+        vSeeds.push_back(CDNSSeedData("4",  "ns1.footycash.com"));
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
 
